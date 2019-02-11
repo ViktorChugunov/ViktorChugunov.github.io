@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+body {
+	background-color: E4E4E4;
+}
+
+.anchor {
+	display: block;
+	position: relative;
+	top: -90px;
+	visibility: hidden;
+}
+
+/* Стили шапки */
+.header {
+	position: fixed;
+    left: 0;
+	top: 0;
+    background: #FF5E5E;	
+    color: #fff;
+    width: 100%;
+	height: 90px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	z-index: 400;
+	padding: 12px;	
+}
+
+.header-logo {
+	width: 60px;
+}
+
+.header-logo-image {
+	width: 60px;
+}
+
+.header-logo-image img {
+	width: 50px;
+	padding: 0 5px;
+}
+
+.header-logo-title {
+	text-align: center;
+	width: 60px;
+	color: #FAE7B5;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 4px;
+	
+}
+
+.header-menu {
+	width: 940px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.header-menu-list {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.header-menu-list-item {
+	padding: 0 12px;
+	
+}
+
+.header-menu-list-item-link {
+	font-size: 16px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.header-menu-list-item-link:hover {
+	text-decoration: underline;
+	color: #FAE7B5;
+}
+
+/* Стили блока с общей информацией */
+.common-info {
+	width: 1000px;	
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	position: relative;
+}
+
+.common-info-header {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin: 110px auto 24px auto;
+	color: #FF5E5E;
+	width: 100%;
+}
+
+.common-info-first-line {
+	width: 400px;
+}
+
+.common-info-first-line-image {
+	width: 100%;
+	border: 3px solid gray;
+}
+
+.common-info-second-line {
+	width: 600px;
+	padding: 24px;	
+}
+
+.common-info-second-line-list {
+	margin-left: 40px;
+}
+
+.common-info-second-line-list-item {
+	padding: 4px 0;
+	line-height: 28px;
+	text-align: justify;
+}
+
+/* Стили блока фото хобби */
+.hobby-info-header {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin: 24px auto;
+	color: #FF5E5E;
+}
+
+.hobby-info-item-image {
+  opacity: 1;
+  display: block;
+  height: 300px !important;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.hobby-info-item-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  line-height: 20px;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.hobby-info-item:hover .hobby-info-item-image {
+  opacity: 0.3;
+}
+
+.hobby-info-item:hover .hobby-info-item-text {
+  opacity: 1;
+}
+
+.owl-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-size: 20px;
+	margin: 8px 0;
+}
+
+.owl-prev span,
+.owl-next span {
+	border: 1px solid #000;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 0 2px 0;
+}
+
+.owl-prev {
+	margin-right: 16px;
+}
+
+/* Форма обратной связи */
+.feedback {
+	width: 400px;
+	margin: 0 auto;
+}
+
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+	position: relative;	
+}
+
+.feedback-form-header {
+	display: block;
+	font-size: 24px;
+	font-weight: bold;
+	text-align: center;
+	margin: 24px auto;
+	color: #FF5E5E;
+}
+
+.feedback-form-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 12px 0;
+}
+
+.feedback-form-row-label {
+	width: 130px;
+	font-weight: bold;
+}
+
+.feedback-form-row-input,
+.feedback-form-row-textarea {
+	width: calc(100% - 130px);
+	border: 2px solid #A7A7A7;
+	border-radius: 4px;
+}
+
+.feedback-form-row-checkbox-label {
+	width: 320px;
+	font-weight: bold;
+}
+
+.feedback-form-row-checkbox-container {
+	width: calc(100% - 320px);
+}
+
+.feedback-form-row-input {
+	height: 32px;
+	padding: 0 8px;
+}
+
+.feedback-form-row-textarea {
+	resize: none;	
+	padding: 8px;
+}
+
+.feedback-form-row-submit {
+	width: 100px;
+	height: 40px;
+	border-radius: 4px;
+	background-color: #72b077;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(245,245,245);
+	text-shadow: 0 -1px rgba(0,0,0,.1);
+	text-decoration: none;
+	outline: none;
+	border: none;
+	background: #0c9c0d linear-gradient(#82d18d, #0c9c0d);
+	box-shadow: inset #72de26 0 -1px 1px, inset 0 1px 1px #98ff98, #3caa3c 0 0 0 1px, rgba(0,0,0,.3) 0 2px 5px;
+}
+
+.feedback-form-row-submit:hover {
+	cursor: pointer;
+}
+
+/* Подвал */
+.footer {
+	margin-top: 24px;
+    padding: 12px;
+    background: #FF5E5E;
+    color: #fff;
+    width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.footer-social-networks {
+	width: 500px;
+}
+
+.footer-social-networks-title {
+	margin-bottom: 12px;
+	font-weight: bold;
+	    color: #FAE7B5;
+}
+
+.footer-left-social-networks-link {
+	margin-right: 8px;
+}		
+
+.footer-contacts {
+	width: 500px;
+}
+
+.footer-right-contacts-phone,
+.footer-right-contacts-email,
+.footer-left-copyright {
+	text-align: right;
+	color: #FAE7B5;
+	padding: 4px 0;
+}
+
+.footer-copyright-link {
+	color: #FFF;
+	text-decoration: none;
+}
